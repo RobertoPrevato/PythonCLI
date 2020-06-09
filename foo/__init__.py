@@ -1,4 +1,1 @@
-
-
-def foo() -> str:
-    return "foo"
+version = "0.0.1"

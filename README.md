@@ -1,15 +1,17 @@
-![Build](https://github.com/RobertoPrevato/PythonTemplate/workflows/Build/badge.svg)
+![Build](https://github.com/RobertoPrevato/PythonCLI/workflows/Build/badge.svg)
 
-# Python project template
-Python project template for generic libraries.
+# Python CLI project template
+Python project template for CLI using [click](https://click.palletsprojects.com).
 
-* VS Code project code-workspace
-* pytest
-* flake8
-* mypy
-* GitHub build workflow
-* Makefile
-* setup.py starter file
+* [pytest](https://docs.pytest.org/en/latest/)
+* [flake8](https://pypi.org/project/flake8/)
+* [black](https://github.com/psf/black) ⚫
+* [mypy](http://mypy-lang.org)
+* [GitHub build workflow](https://help.github.com/en/actions/building-and-testing-code-with-continuous-integration/about-continuous-integration)
+* [Makefile](https://www.gnu.org/software/make/manual/make.html)
+* [setup.py starter file](https://docs.python.org/3/distutils/setupscript.html)
+* [click](https://click.palletsprojects.com)
+* [VS Code project code-workspace](https://code.visualstudio.com)
 
 ## Getting started
 
@@ -25,6 +27,19 @@ venv\Scripts\activate
 
 # install dependencies
 pip install -r requirements.txt
+```
+
+## Install in development mode
+To test the CLI during development, install it in edit mode:
+
+```
+pip install -e .
+```
+
+Then, use the CLI with:
+
+```
+foo
 ```
 
 ## Makefile
@@ -51,4 +66,9 @@ make testrelease
 
 # upload to pypi
 make release
+```
+
+## Formatting with black
+```
+black .
 ```

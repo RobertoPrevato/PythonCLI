@@ -1,3 +1,4 @@
+from foo import version
 from setuptools import setup
 
 
@@ -8,7 +9,7 @@ def readme():
 
 setup(
     name="foo",
-    version="0.1.1",
+    version=version,
     description="Project template",
     long_description=readme(),
     long_description_content_type="text/markdown",
@@ -23,9 +24,8 @@ setup(
     author_email="roberto.prevato@gmail.com",
     keywords="template",
     license="MIT",
-    packages=[
-        "foo",
-    ],
-    install_requires=[],
+    packages=["foo"],
+    entry_points={"console_scripts": ["foo=foo.main:main"]},
+    install_requires=["click", "essentials"],
     include_package_data=True,
 )
