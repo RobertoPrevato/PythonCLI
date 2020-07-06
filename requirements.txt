@@ -5,7 +5,6 @@ click==7.1.2
 coverage==5.1
 essentials==1.1.3
 flake8==3.8.3
--e git+git@github.com:RobertoPrevato/PythonCLI.git@010978793ab0b5cd17f703614f5aef32104a6925#egg=foo
 mccabe==0.6.1
 more-itertools==8.3.0
 mypy==0.780
